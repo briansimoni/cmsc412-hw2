@@ -14,11 +14,11 @@ It will try to read in graph.txt from the present working directory and output c
 Here is the link to download Go
 [https://golang.org/doc/install](https://golang.org/doc/install)
 
-If you don't feel like downloading, installing, and configuring Go, I've compiled it for the major operating systems and I have them available for download on my website.
+If you don't feel like downloading them, I've compiled the executables for a couple different operating systems. You can get them from the zip file submitted with the assignment, or from Github.
 
-[MacOS/Linux](http://briansimoni.com/wp-content/uploads/2016/09/cmsc412-hw2)
+[MacOS/Linux](https://github.com/briansimoni/cmsc412-hw2/raw/master/cmsc412-hw2)
 
-[Windows](http://briansimoni.com/wp-content/uploads/2016/09/cmsc412-hw2.exe)
+[Windows](https://github.com/briansimoni/cmsc412-hw2/raw/master/cmsc412-hw2.exe)
 
-[graph.txt](http://briansimoni.com/wp-content/uploads/2016/10/graph.txt)
+[graph.txt](https://github.com/briansimoni/cmsc412-hw2/raw/master/graph.txt)
 
