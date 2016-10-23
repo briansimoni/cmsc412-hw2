@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5ca4199-643a-4bf1-88b7-16ef111abffa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$USER_HOME$/WebstormProjects/cmsc415-hw2/.idea/cmsc415-hw2.iml" afterPath="$USER_HOME$/WebstormProjects/cmsc415-hw2/.idea/cmsc412-hw2.iml" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/cmsc415-hw2/.idea/workspace.xml" afterPath="$USER_HOME$/WebstormProjects/cmsc415-hw2/.idea/workspace.xml" />
     </list>
     <ignored path="cmsc415-hw2.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path="$USER_HOME$/WebstormProjects/cmsc415-hw2/.tmp/" />
+    <ignored path="$USER_HOME$/WebstormProjects/cmsc415-hw2/temp/" />
+    <ignored path="$USER_HOME$/WebstormProjects/cmsc415-hw2/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +29,7 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="edge.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/edge.go">
+            <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/edge.go">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="38">
                   <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
@@ -38,7 +39,7 @@
             </entry>
           </file>
           <file leaf-file-name="graph.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/graph.go">
+            <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/graph.go">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="418">
                   <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
@@ -48,7 +49,7 @@
             </entry>
           </file>
           <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main.go">
+            <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/main.go">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="684">
                   <caret line="41" column="100" selection-start-line="41" selection-start-column="100" selection-end-line="41" selection-end-column="100" />
@@ -60,7 +61,7 @@
             </entry>
           </file>
           <file leaf-file-name="graph.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/graph.txt">
+            <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/graph.txt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="38">
                   <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
@@ -70,7 +71,7 @@
             </entry>
           </file>
           <file leaf-file-name="closeness.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/closeness.txt">
+            <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/closeness.txt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="38">
                   <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
@@ -80,7 +81,7 @@
             </entry>
           </file>
           <file leaf-file-name="node.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/node.go">
+            <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/node.go">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -90,7 +91,7 @@
             </entry>
           </file>
           <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
+            <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                 <state split_layout="FIRST">
                   <first_editor relative-caret-position="388">
@@ -110,7 +111,7 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
+            <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/README.md">
               <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                 <state split_layout="FIRST">
                   <first_editor relative-caret-position="418">
@@ -137,17 +138,17 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/WebstormProjects/cmsc415-hw2" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SD.go" />
-        <option value="$PROJECT_DIR$/graph.txt" />
-        <option value="$PROJECT_DIR$/closeness.txt" />
-        <option value="$PROJECT_DIR$/graph.go" />
-        <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$USER_HOME$/WebstormProjects/cmsc415-hw2/SD.go" />
+        <option value="$USER_HOME$/WebstormProjects/cmsc415-hw2/graph.txt" />
+        <option value="$USER_HOME$/WebstormProjects/cmsc415-hw2/closeness.txt" />
+        <option value="$USER_HOME$/WebstormProjects/cmsc415-hw2/graph.go" />
+        <option value="$USER_HOME$/WebstormProjects/cmsc415-hw2/main.go" />
+        <option value="$USER_HOME$/WebstormProjects/cmsc415-hw2/README.md" />
       </list>
     </option>
   </component>
@@ -193,17 +194,11 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cmsc415-hw2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmsc415-hw2" />
+              <option name="myItemId" value="cmsc412-hw2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cmsc415-hw2" />
+              <option name="myItemId" value="cmsc412-hw2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -219,7 +214,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$USER_HOME$/WebstormProjects/cmsc415-hw2" />
     </key>
   </component>
   <component name="RunManager">
@@ -242,20 +237,20 @@
     </configuration>
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
+      <working_directory value="$USER_HOME$/WebstormProjects/cmsc415-hw2" />
+      <filePath value="$USER_HOME$/WebstormProjects/cmsc415-hw2" />
       <kind value="FILE" />
       <method />
     </configuration>
     <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
       <module name="" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
+      <working_directory value="$USER_HOME$/WebstormProjects/cmsc415-hw2" />
+      <filePath value="$USER_HOME$/WebstormProjects/cmsc415-hw2" />
       <method />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$USER_HOME$/WebstormProjects/cmsc415-hw2" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
       <method />
@@ -319,12 +314,12 @@
       <option name="presentableId" value="Default" />
       <updated>1477240292787</updated>
       <workItem from="1477240293941" duration="2743000" />
-      <workItem from="1477243686398" duration="29000" />
+      <workItem from="1477243686398" duration="87000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2772000" />
+    <option name="totallyTimeSpent" value="2830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="24" width="1295" height="744" extended-state="6" />
@@ -364,7 +359,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/edge.go">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/edge.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
@@ -372,7 +367,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph.go">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/graph.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
@@ -380,7 +375,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="41" column="100" selection-start-line="41" selection-start-column="100" selection-end-line="41" selection-end-column="100" />
@@ -390,7 +385,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph.txt">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/graph.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
@@ -398,7 +393,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/closeness.txt">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/closeness.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
@@ -406,7 +401,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node.go">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/node.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -414,7 +409,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/README.md">
       <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="418">
@@ -428,9 +423,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wdegree.txt" />
-    <entry file="file://$PROJECT_DIR$/SD.go" />
-    <entry file="file://$PROJECT_DIR$/node.go">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc415-hw2/wdegree.txt" />
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc415-hw2/SD.go" />
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/node.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -438,7 +433,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edge.go">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/edge.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
@@ -446,7 +441,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph.go">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/graph.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
@@ -454,7 +449,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/closeness.txt">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/closeness.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
@@ -462,7 +457,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph.txt">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/graph.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
@@ -470,7 +465,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="41" column="100" selection-start-line="41" selection-start-column="100" selection-end-line="41" selection-end-column="100" />
@@ -480,7 +475,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$USER_HOME$/WebstormProjects/cmsc412-hw2/README.md">
       <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="418">

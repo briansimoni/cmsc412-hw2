@@ -13,7 +13,7 @@
       <root url="file://$USER_HOME$/go/src/golang.org" />
     </SOURCES>
     <excluded>
-      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/../cmsc412-hw2" />
     </excluded>
   </library>
 </component>
