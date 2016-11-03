@@ -8,84 +8,92 @@ const infinity = math.MaxInt32
 
 // a graph is simply a collection of nodes and edges (the node struct contains edge data)
 type graph struct {
-	nodes []node
+	nodes map[string]node
+}
+
+func NewGraph() graph {
+	nodes := make(map[string]node)
+	return graph{nodes: nodes}
 }
 
 // function to see if the node is already in the graph
-func (g graph) IsInGraph(n int) bool {
-	for i := range g.nodes {
-		if g.nodes[i].id == n {
-			return true
-		}
+func (g graph) IsInGraph(id string) bool {
+	if _, ok := g.nodes[id]; ok {
+		return true
 	}
-
 	return false
 }
 
 
 func (g graph) InsertNode(n node) {
 	if !g.IsInGraph(n.id) {
-		g.nodes = append(g.nodes, n)
+		g.nodes[n.id] = n
 	}
 }
+
 
 func (g *graph) initialize () {
-	for i := range g.nodes {
-		g.nodes[i].distance = infinity
-		g.nodes[i].parent = nil
+
+	for _, node := range g.nodes {
+		node.distance = infinity
+		node.parent = nil
 	}
+
 }
 
-
+// todo refactor breadthFirstSearch for maps
 // the breadth first search function sets the shortest path distance to all other nodes in g
-func (g *graph) breadthFirstSearch(root *node) {
+func (g *graph) breadthFirstSearch(root string) {
 
 	g.initialize()
 
 	// create empty queue
-	queue := make([]*node, 0)
+	queue := make([]string, 0)
 
-	root.distance = 0
+	r := g.nodes[root]
+	r.distance = 0
+	g.nodes[root] = r
 	// enqueue root (push)
 	queue = append(queue, root)
 
 	for len(queue) != 0 {
-		current := queue[0]
+		current := g.nodes[queue[0]]
 		queue = queue[1:]
 		for i := range current.edges {
-			// remember to subtract 1 to account for my 0 based index of nodes
-			neighbor := current.edges[i].toNode - 1
-			if g.nodes[neighbor].distance == infinity {
-				g.nodes[neighbor].distance = current.distance + 1
-				g.nodes[neighbor].parent = current
-				queue = append(queue, &g.nodes[neighbor])
+
+			// neighbor is a node
+			neighbor := g.nodes[current.edges[i].toNode]
+			if g.nodes[neighbor.id].distance == infinity {
+
+				neighbor.distance = current.distance + 1
+				neighbor.parent = &current
+				g.nodes[neighbor.id] = neighbor
+
+				queue = append(queue, neighbor.id)
 			}
 		}
 	}
 }
 
-
+// todo refactor for maps
 // calculate the normalized closeness centrality for all nodes in g
 func (g *graph) closenessCentrality() {
-	n := float64(len(g.nodes))
-	for i := range g.nodes {
-		g.breadthFirstSearch(&g.nodes[i])
+	totalNodes := float64(len(g.nodes))
 
+
+	for nodeID, node := range g.nodes {
+		g.breadthFirstSearch(nodeID)
 		var sum float64 = 0.0
-		for j := range g.nodes {
-			sum += float64(g.nodes[j].distance)
+		for _, n := range g.nodes {
+			sum += float64(n.distance)
 		}
 
-		sum = sum / (n - 1)
-		g.nodes[i].closenessCentrality = math.Pow(sum, -1)
+		sum = sum / (totalNodes - 1)
+		node.closenessCentrality = math.Pow(sum, -1)
 
 	}
 }
 
-// create a new graph with a specified number of nodes
-func NewGraph(size int) graph {
-	nodes := make([]node, size)
-	return graph{nodes: nodes}
-}
+
 
 

@@ -3,7 +3,7 @@ package main
 import "reflect"
 
 type node struct {
-	id    int
+	id    string
 	edges []edge
 
 	// using distance and parent for breadth first search algorithm
