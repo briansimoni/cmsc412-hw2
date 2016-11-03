@@ -8,6 +8,7 @@ import (
 	"os"
 	"bufio"
 	"strings"
+	"fmt"
 )
 
 func createGraphFromFile(fileName string) graph {
@@ -30,8 +31,11 @@ func createGraphFromFile(fileName string) graph {
 
 func createNodeFromText(line string) node {
 	values := strings.Split(line, "	")
+	if len(values) < 10 {
+		fmt.Println(len(values))
+	}
 	id := values[0]
-	related := values[9]
+	related := values[len(values)-1]
 
 	// from and to
 	e := edge{fromNode:id, toNode:related}
