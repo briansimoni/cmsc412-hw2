@@ -8,7 +8,7 @@ import (
 	"os"
 	"bufio"
 	"strings"
-	"fmt"
+	"errors"
 )
 
 func createGraphFromFile(fileName string) graph {
@@ -21,7 +21,10 @@ func createGraphFromFile(fileName string) graph {
 	g := NewGraph()
 
 	for scanner.Scan() {
-		n := createNodeFromText(scanner.Text())
+		err, n := createNodeFromText(scanner.Text())
+		if err != nil {
+			continue
+		}
 		g.InsertNode(n)
 
 	}
@@ -29,22 +32,44 @@ func createGraphFromFile(fileName string) graph {
 	return g
 }
 
-func createNodeFromText(line string) node {
+func createNodeFromText(line string) (error, node) {
 	values := strings.Split(line, "	")
-	if len(values) < 10 {
-		fmt.Println(len(values))
-	}
-	id := values[0]
-	related := values[len(values)-1]
 
-	// from and to
-	e := edge{fromNode:id, toNode:related}
-	edges := []edge{e}
+
+	if len(values) < 7 {
+		e := errors.New("incomplete video data")
+		return e, node{}
+	}
+
+	id := values[0]
+	author := values[1]
+	age := values[2]
+	category := values[3]
+	length := values[4]
+	rate := values[5]
+	ratings := values[6]
+	comments := values[7]
+
+	// everything past 8 is related videos
+	related := values[8:]
+
+	edges := make([]edge, 0)
+	for i := range related {
+		e := edge{fromNode:id, toNode:related[i]}
+		edges = append(edges, e)
+	}
 	n := node{
 			id:id,
+			author: author,
+			age: age,
+			category: category,
+			length: length,
+			rate: rate,
+			ratings: ratings,
+			comments: comments,
 			edges:edges,
 	}
 
-	return n
+	return nil, n
 }
 

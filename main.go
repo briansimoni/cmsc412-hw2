@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strconv"
-	"os"
 )
 
 // the main function will create a graph object
@@ -12,19 +10,30 @@ import (
 // to wdegree.txt
 func main() {
 
-	g := createGraphFromFile("youtube/3.txt")
-	fmt.Println(g)
+	g := createGraphFromFile("youtube/1.txt")
+	//g.closenessCentrality()
+	//
+	//
+	//fileString := ""
+	//for k, _ := range g.nodes {
+	//	fileString += strconv.FormatFloat(g.nodes[k].closenessCentrality, 'f', -1, 64) + "\r\n"
+	//}
+	//
+	//f, err := os.Create("closeness.txt")
+	//check(err)
+	//f.Write([]byte(fileString))
+	//
+	//for _, node := range g.nodes {
+	//	fmt.Println(node.category)
+	//}
 
+	//result := g.topCategoryByVideoCount()
+	//fmt.Println(result)
 
-	fileString := ""
-	for k, _ := range g.nodes {
-		fileString += strconv.FormatFloat(g.nodes[k].closenessCentrality, 'f', -1, 64) + "\r\n"
+	result2 := g.averageCategoryRate()
+	for k, v := range result2 {
+		fmt.Println(k,v)
 	}
-
-	f, err := os.Create("closeness.txt")
-	check(err)
-	f.Write([]byte(fileString))
-
 
 }
 

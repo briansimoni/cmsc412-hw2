@@ -2,6 +2,7 @@ package main
 
 import (
 	"math"
+	"strconv"
 )
 
 const infinity = math.MaxInt32
@@ -24,15 +25,13 @@ func (g graph) IsInGraph(id string) bool {
 	return false
 }
 
-
 func (g graph) InsertNode(n node) {
 	if !g.IsInGraph(n.id) {
 		g.nodes[n.id] = n
 	}
 }
 
-
-func (g *graph) initialize () {
+func (g *graph) initialize() {
 
 	for _, node := range g.nodes {
 		node.distance = infinity
@@ -75,11 +74,9 @@ func (g *graph) breadthFirstSearch(root string) {
 	}
 }
 
-// todo refactor for maps
 // calculate the normalized closeness centrality for all nodes in g
 func (g *graph) closenessCentrality() {
 	totalNodes := float64(len(g.nodes))
-
 
 	for nodeID, node := range g.nodes {
 		g.breadthFirstSearch(nodeID)
@@ -94,6 +91,38 @@ func (g *graph) closenessCentrality() {
 	}
 }
 
+func (g *graph) topCategoryByVideoCount() map[string]int {
+
+	sums := make(map[string]int, 0)
+
+	for _, node := range g.nodes {
+		sums[node.category]++
+		sums["total"]++
+	}
+
+	return sums
+}
 
 
+func (g *graph) averageCategoryRate() map[string]float64 {
 
+	sums := make(map[string]int, 0)
+	floatSums := make(map[string]float64, 0)
+
+	for _, node := range g.nodes {
+		sums[node.category]++
+
+		f, _ := strconv.ParseFloat(node.ratings, 64)
+		if f == 0 {
+			sums[node.category]--
+		}
+
+		floatSums[node.category] += f
+	}
+
+	for k, _ := range sums {
+		floatSums[k] = floatSums[k] / float64(sums[k])
+	}
+
+	return floatSums
+}

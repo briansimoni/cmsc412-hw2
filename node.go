@@ -3,15 +3,21 @@ package main
 import "reflect"
 
 type node struct {
-	id    string
-	edges []edge
+	id       string
+	author	string
+	age      string
+	category string
+	length   string
+	rate     string
+	ratings  string
+	comments string
+	edges    []edge
 
 	// using distance and parent for breadth first search algorithm
 	distance int
-	parent *node
+	parent   *node
 
 	closenessCentrality float64
-
 }
 
 func (n node) WeightedDegreeCentrality() float64 {
