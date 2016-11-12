@@ -9,6 +9,7 @@ import (
 	"bufio"
 	"strings"
 	"errors"
+	"regexp"
 )
 
 func createGraphFromFile(fileName string) graph {
@@ -33,7 +34,9 @@ func createGraphFromFile(fileName string) graph {
 }
 
 func createNodeFromText(line string) (error, node) {
-	values := strings.Split(line, "	")
+	r := regexp.MustCompile(`\t`)
+	line = r.ReplaceAllString(line, " ")
+	values := strings.Split(line, " ")
 
 
 	if len(values) < 7 {
@@ -46,12 +49,13 @@ func createNodeFromText(line string) (error, node) {
 	age := values[2]
 	category := values[3]
 	length := values[4]
-	rate := values[5]
-	ratings := values[6]
-	comments := values[7]
+	views := values[5]
+	rate := values[6]
+	ratings := values[7]
+	comments := values[8]
 
 	// everything past 8 is related videos
-	related := values[8:]
+	related := values[9:]
 
 	edges := make([]edge, 0)
 	for i := range related {
@@ -63,6 +67,7 @@ func createNodeFromText(line string) (error, node) {
 			author: author,
 			age: age,
 			category: category,
+			views : views,
 			length: length,
 			rate: rate,
 			ratings: ratings,

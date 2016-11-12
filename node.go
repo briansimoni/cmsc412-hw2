@@ -8,6 +8,7 @@ type node struct {
 	age      string
 	category string
 	length   string
+	views	string
 	rate     string
 	ratings  string
 	comments string

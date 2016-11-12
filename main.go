@@ -10,9 +10,19 @@ import (
 // to wdegree.txt
 func main() {
 
-	g := createGraphFromFile("youtube/1.txt")
-	//g.closenessCentrality()
-	//
+	g := createGraphFromFile("youtube/big.txt")
+
+	g.breadthFirstSearch("CLEDJoGUbgE")
+	for _, node := range g.nodes {
+		if node.distance < infinity {
+			fmt.Println(node.distance)
+		}
+	}
+
+
+	//g.PrintGraphInformation()
+
+
 	//
 	//fileString := ""
 	//for k, _ := range g.nodes {
@@ -30,10 +40,10 @@ func main() {
 	//result := g.topCategoryByVideoCount()
 	//fmt.Println(result)
 
-	result2 := g.averageCategoryRate()
-	for k, v := range result2 {
-		fmt.Println(k,v)
-	}
+	//result2 := g.averageCategoryRate()
+	//for k, v := range result2 {
+	//	fmt.Println(k,v)
+	//}
 
 }
 
